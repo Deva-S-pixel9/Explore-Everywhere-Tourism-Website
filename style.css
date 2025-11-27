@@ -1,0 +1,59 @@
+h1 {
+    color: rgb(255, 51, 0);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+img {
+       display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+body {
+     
+    background-image: url('img/bg.jpg');
+   
+    background-repeat: no-repeat;/* Avoids repeating image */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed;/* Keeps image fixed while scrolling */
+
+
+}
+
+.quote{
+        font-family:cursive
+}
+
+.para{
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+nav {
+    
+    display:flex;
+    justify-content:right;
+    gap: 15px;
+}
+
+nav a{
+    color: rgb(0, 128, 240);
+    
+}
+
