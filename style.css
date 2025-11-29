@@ -10,12 +10,21 @@ nav{
     padding: 30px;
 }
 
+a{
+    text-decoration: none;
+    color: goldenrod;
+}
+
+a:hover{
+    color: white;
+}
+
 li,h1,ul{
     display: inline;
 }
 
 ul{
-    margin-left: 20%;
+    margin-left: 25%;
 }
 
 li{
@@ -28,17 +37,35 @@ li:hover{
     color: white;
 }
 
+body {
+     
+    background-image: url('images/bg.jpg');
+   
+    background-repeat: no-repeat;/* Avoids repeating image */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed;/* Keeps image fixed while scrolling */
+
+
+}
+
+.quote{
+        font-family:cursive;
+        text-align: center;
+        font-size: x-large;
+}
+
 .North-card, .South-card, .East-card, .West-card, .International-card{
   width: 260px;
   height: 320px;                 /* 240 top + 80 bottom */
   border: 1px solid #555;
   border-radius: 10px;
   overflow: hidden;
-  margin: 30px 20px 30px 30px;
+  margin: 10px auto;
   background: black;
   font-family: Arial, sans-serif;
-  display: inline-block;
-  vertical-align: top;
+  display: block;                 /* forces images to stack */      
+  margin-bottom: 20px; /* space between images */
+  
 }
 
 /* TOP: sliding photos inside same box */
@@ -84,7 +111,7 @@ li:hover{
   align-items: center;
   justify-content: center;
   gap: 6px;
-  font 
+  
 }
 
 .place-name{
@@ -142,7 +169,7 @@ li:hover{
 /* trust list */
 .trust-strip ul{
   margin: 0;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 .trust-strip li{
@@ -189,10 +216,6 @@ li:hover{
 
 
 
-
-
-
-
 .site-footer{
   margin-top: 40px;
   padding: 20px 40px 10px;
@@ -233,14 +256,10 @@ li:hover{
 .footer-right p{
   margin: 0 0 3px;
   font-size: 13px;
+  
 }
 
-.footer-social a{
-  margin-left: 6px;
-  font-size: 13px;
-  color: goldenrod;
-  text-decoration: none;
-}
+
 
 /* bottom line spanning full width */
 .footer-bottom{
