@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    background-color: black;
+    color: goldenrod;
+    padding: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: goldenrod;
+}
+
+a:hover{
+    color: white;
+}
+
+li,h1,ul{
+    display: inline;
+}
+
+ul{
+    margin-left: 25%;
+}
+
+li{
+    color:goldenrod;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+li:hover{
+    color: white;
+}
+
+body {
+     
+    background-image: url('images/bg.jpg');
+   
+    background-repeat: no-repeat;/* Avoids repeating image */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed;/* Keeps image fixed while scrolling */
+
+
+}
+
+.quote{
+        font-family:cursive;
+        text-align: center;
+        font-size: x-large;
+}
+
+.North-card, .South-card, .East-card, .West-card, .International-card{
+  width: 260px;
+  height: 320px;                 /* 240 top + 80 bottom */
+  border: 1px solid #555;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px auto;
+  background: black;
+  font-family: Arial, sans-serif;
+  display: block;                 /* forces images to stack */      
+  margin-bottom: 20px; /* space between images */
+  
+}
+
+/* TOP: sliding photos inside same box */
+.North-card-top, .South-card-top, .East-card-top, .West-card-top, .International-card-top{
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.North-card-top img, .South-card-top img, .East-card-top img, .West-card-top img, .International-card-top img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fade 15s infinite;
+}
+
+/* 5 images → 3s each */
+.North-card-top img:nth-child(1), .South-card-top img:nth-child(1), .East-card-top img:nth-child(1), .West-card-top img:nth-child(1), .International-card-top img:nth-child(1){ animation-delay: 0s; }
+.North-card-top img:nth-child(2), .South-card-top img:nth-child(2), .East-card-top img:nth-child(2), .West-card-top img:nth-child(2), .International-card-top img:nth-child(2){ animation-delay: 3s; }
+.North-card-top img:nth-child(3), .South-card-top img:nth-child(3), .East-card-top img:nth-child(3), .West-card-top img:nth-child(3), .International-card-top img:nth-child(3){ animation-delay: 6s; }
+.North-card-top img:nth-child(4), .South-card-top img:nth-child(4), .East-card-top img:nth-child(4), .West-card-top img:nth-child(4), .International-card-top img:nth-child(4){ animation-delay: 9s; }
+.North-card-top img:nth-child(5), .South-card-top img:nth-child(5), .East-card-top img:nth-child(5), .West-card-top img:nth-child(5), .International-card-top img:nth-child(5){ animation-delay: 12s; }
+
+@keyframes fade{
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  25%  { opacity: 1; }
+  30%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* BOTTOM: still inside .card, looks like tour card */
+.North-card-bottom, .South-card-bottom, .East-card-bottom, .West-card-bottom, .International-card-bottom{
+  height: 80px;
+  padding: 10px 12px;
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  
+}
+
+.place-name{
+  margin: 0;
+  font-size: 16px;
+  color: goldenrod ;
+}
+
+.badge{
+  display: inline-block;
+  padding: 4px 12px;
+  background: goldenrod;
+  color: black ;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+.badge:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.about{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+
+/* common section styling */
+.trust-strip,
+.contact-strip{
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px 24px;
+  background: #1f1f1f;
+  color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.trust-strip h2,
+.contact-strip h2{
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 22px;
+  color: goldenrod;
+}
+
+/* trust list */
+.trust-strip ul{
+  margin: 0;
+  padding-left: 0px;
+}
+
+.trust-strip li{
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* contact form */
+.contact-strip p{
+  margin: 0 0 12px;
+  font-size: 14px;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.contact-form button{
+  align-self: flex-start;
+  padding: 8px 18px;
+  background: goldenrod;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover{
+  background: #e0a800;
+}
+
+
+
+.site-footer{
+  margin-top: 40px;
+  padding: 20px 40px 10px;
+  background: #111;
+  color: #ddd;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.site-footer h3{
+  margin: 0 0 6px;
+  font-size: 20px;
+  color: goldenrod;
+}
+
+.site-footer h4{
+  margin: 0 0 6px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #f4f4f4;
+}
+
+/* 3 columns on desktop */
+.site-footer{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  row-gap: 12px;
+  column-gap: 24px;
+}
+
+.footer-left p{
+  margin: 0;
+  font-size: 13px;
+}
+
+
+
+.footer-right p{
+  margin: 0 0 3px;
+  font-size: 13px;
+  
+}
+
+
+
+/* bottom line spanning full width */
+.footer-bottom{
+  grid-column: 1 / -1;
+  border-top: 1px solid #333;
+  margin-top: 10px;
+  padding-top: 6px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* simple mobile layout */
+@media (max-width: 768px){
+  .site-footer{
+    grid-template-columns: 1fr;
+  }
+}

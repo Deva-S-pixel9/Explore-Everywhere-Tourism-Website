@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+}
+
+
+body {
+     
+    background-image: url('images/bg.jpg');
+    background-size:auto;
+    background-repeat: no-repeat;/* Avoids repeating image */
+    background-position:center; /* Centers the image */
+    background-attachment: fixed;/* Keeps image fixed while scrolling */
+}
+
+h3{
+    color: goldenrod;
+}
+
+h1 {
+    color: goldenrod;  
+    
+}
+
+a{
+    text-decoration: none;
+    color: goldenrod;
+}
+
+p,h2{
+    text-align: center;
+}
+
+a:hover{
+    color: white;
+}
+
+nav{
+    background-color: black;
+    color: goldenrod;
+    padding: 30px;
+}
+
+
+
+li,h1,ul{
+    display: inline;
+}
+
+ul{
+    margin-left: 33.7%;
+}
+
+li{
+    color:goldenrod;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+li:hover{
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    flex-wrap: wrap;
+    text-align-last: center;
+    color: aliceblue;
+    
+}
+
+.contact-form, .contact-info {
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 48%;
+    box-shadow: 0 0 150px rgba(0,0,0,0.1);
+    background-color: black;
+    text-align-last:center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #897c7c;
+    border-radius: 2px;
+    text-align-last:left;
+}
+
+button {
+    
+    background-color: goldenrod;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .contact-form, .contact-info {
+        width: 100%;
+    }
+}
