@@ -1,0 +1,144 @@
+/* SOUTH IMAGE SLIDER */
+.south-card-top {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.south-slide {
+    width: 300px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.south-slide img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Caption under images */
+.south-caption {
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* MAIN SOUTH SECTION WRAPPER */
+.South-card {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #eef8f0; /* soft green tint like your sample */
+}
+
+/* HORIZONTAL SLIDING IMAGES + CONTENT */
+.south-card-top {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 30px;
+}
+
+.south-card-top::-webkit-scrollbar {
+    display: none;
+}
+
+/* EACH DESTINATION BLOCK */
+.south-slide {
+    min-width: 550px;
+    background: white;
+    border-radius: 18px;
+    padding: 0 0 20px 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.18);
+    scroll-snap-align: start;
+    border: 1px solid #e9e9e9;
+}
+
+/* IMAGE AT TOP */
+.south-slide img {
+    width: 100%;
+    height: 250px;
+    border-radius: 18px 18px 0 0;
+    object-fit: cover;
+}
+
+/* CAPTION BELOW IMAGE */
+.caption {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #444;
+    font-size: 15px;
+}
+
+/* HISTORY + QUOTES + FACTS SECTION */
+.south-history-section {
+    padding: 20px 25px;
+    text-align: center;
+}
+
+/* MAIN HEADING (PLACE – HISTORY) */
+.south-history-section h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #222;
+}
+
+/* PARAGRAPH */
+.south-history-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    color: #333;
+}
+
+/* SUB HEADINGS (Quotes, Facts, Attractions) */
+.south-history-section h3 {
+    font-size: 19px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #2c4c3b;
+}
+
+/* FAMOUS QUOTE BOX */
+.south-history-section blockquote {
+    background: #f6fff8;
+    border-left: 4px solid #2b7a4b;
+    padding: 12px 20px;
+    font-style: italic;
+    border-radius: 8px;
+    margin: 0 auto 18px auto;
+    color: #333;
+}
+
+/* LISTS (Quick Facts, Attractions) */
+.south-history-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px 0;
+}
+
+.south-history-section ul li {
+    background: #f9f9f9;
+    margin: 5px auto;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    color: #555;
+    font-size: 14.5px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* Hover effect on fact items */
+.south-history-section ul li:hover {
+    transform: scale(1.03);
+    background: #e8fff0;
+}
