@@ -1,0 +1,178 @@
+body {
+    background-color: #e8f5e9; /* Light green */
+}
+
+.north-card-top {
+  display: flex;
+  gap: 20px; /* Space between each image */
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.slide {
+  width: 300px; /* Adjust image size */
+  flex-shrink: 0;
+  text-align: center; /* Centers the text */
+}
+
+.slide img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Caption text styling */
+.caption {
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ------------------------------
+   GLOBAL PAGE STYLING
+------------------------------ */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #e8f5ee;   /* light greenish background */
+  color: #2c2c2c;
+}
+
+/* Centering container */
+.north-card {
+  width: 100%;
+  padding: 30px 20px;
+}
+
+/* ------------------------------
+   IMAGE SLIDES + SPACING
+------------------------------ */
+.north-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;  /* spacing between images */
+}
+
+.slide {
+  width: 350px;
+  background: #ffffffcc;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.slide:hover {
+  transform: translateY(-6px);
+}
+
+/* Image styling */
+.slide img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ------------------------------
+   CAPTION (TEXT BELOW IMAGE)
+------------------------------ */
+.caption {
+  text-align: center;
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #444;
+  background: #f2f2f2;
+}
+
+/* ------------------------------
+   HISTORY CONTENT
+------------------------------ */
+.history-section {
+  padding: 18px;
+  text-align: left;
+}
+
+.history-section h2 {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #1a1a1a;
+  text-align: center;
+  font-weight: 600;
+}
+
+.history-section p {
+  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+/* ------------------------------
+   SUBHEADINGS
+------------------------------ */
+.history-section h3 {
+  margin-top: 18px;
+  font-size: 18px;
+  color: #34495e;
+  border-left: 4px solid #2e8b57;
+  padding-left: 10px;
+}
+
+/* ------------------------------
+   LISTS (QUOTES, ATTRACTIONS, FACTS)
+------------------------------ */
+.history-section ul {
+  margin: 8px 0 0 20px;
+  line-height: 1.5;
+  padding-left: 0;
+}
+
+/* Quotes italic */
+.quotes li {
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+/* General list item styling */
+.attractions li,
+.facts li {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+/* ------------------------------
+   BACKGROUND IMAGE + OVERLAY (OPTIONAL)
+------------------------------ */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/bg.jpg") center/cover no-repeat;
+  opacity: 0.25;
+  z-index: -1;
+}
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+@media (max-width: 768px) {
+  .slide {
+    width: 90%;
+  }
+
+  .history-section h2 {
+    font-size: 20px;
+  }
+
+  .history-section p,
+  .facts li,
+  .attractions li {
+    font-size: 14px;
+  }
+}
