@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+}
+
+
+
+h1 {
+    color: goldenrod;
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: goldenrod;
+}
+
+a:hover{
+    color: white;
+}
+
+
+img {
+       display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+body {
+     
+    background-image: url('images/bg.jpg');
+    background-size:auto;
+    background-repeat: no-repeat;/* Avoids repeating image */
+    background-position:center; /* Centers the image */
+    background-attachment: fixed;/* Keeps image fixed while scrolling */
+
+
+}
+
+.quote{
+        font-family:cursive
+}
+
+.para{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    
+    
+}
+
+nav{
+    background-color: black;
+    color: goldenrod;
+    padding: 30px;
+}
+
+/*nav a{
+    color: rgb(0, 128, 240);
+    
+} */
+
+li,h1,ul{
+    display: inline;
+}
+
+ul{
+    margin-left: 33.7%;
+}
+
+li{
+    color:goldenrod;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+li:hover{
+    color: white;
+}
+.contact{
+     text-align: center;
+}
+
+
