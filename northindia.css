@@ -1,3 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: black;
+    color: goldenrod;
+    padding: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: goldenrod;
+}
+
+a:hover{
+    color: white;
+}
+
+li,h1,ul{
+    display: inline;
+}
+
+.navbar{
+    margin-left: 15%;
+}
+
+li{
+    color:goldenrod;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+li:hover{
+    color: white;
+}
+
+.quote{
+        font-family:cursive;
+        text-align: center;
+        font-size: x-large;
+}
+
+
 body {
     background-color: #e8f5e9; /* Light green */
 }
